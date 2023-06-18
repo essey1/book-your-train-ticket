@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Book your Train Ticket</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">ETHIOPIAN RAILWAYS</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <!-- Enter your destination and search for trains -->
+          <div id="searchForTrains" class="col-md-12 col-centered">
+            <div class="card mb-4">
+              <h2 class="card-header mb-4 text-center">Book Your Train Ticket</h2>
+              <div>
+                <div class="col-md-12 col-centered">
+                  <label><span class="searchLabel">Departure&nbsp&nbsp</span> 
+                    <select class="from" type="text">
+                      <option value="">Select City</option>
+                      <option class="from" value="Addis Ababa">Addis Ababa</option>
+                      <option class="from" value="Dire Dawa">Dire Dawa</option>
+                      <option class="from" value="Mekelle">Mekelle</option>
+                      <option class="from" value="Adama">Adama</option>
+                      <option class="from" value="Hawassa">Hawassa</option>
+                      <option class="from" value="Bahir Dar">Bahir Dar</option>
+                      <option class="from" value="Gonder">Gonder</option>
+                      <option class="from" value="Dessie">Dessie</option>
+                      <option class="from" value="JImma">Jimma</option>
+                      <option class="from" value="Jijiga">Jijiga</option>
+                      <option class="from" value="Shashamane">Shashamane</option>
+                      <option class="from" value="Bishoftu">Bishoftu</option>
+                      <option class="from" value="Sodo">Sodo</option>
+                      <option class="from" value="Arba Minch">Arba Minch</option>
+                      <option class="from" value="Hosaena">Hosaena</option>
+                    </select>
+                  </label>
+                  <label><span class="searchLabel">Destination</span> 
+                    <select class="to" type="text">
+                      <option value="">Select City</option>
+                      <option class="to" value="Addis Ababa">Addis Ababa</option>
+                      <option class="to" value="Dire Dawa">Dire Dawa</option>
+                      <option class="to" value="Mekelle">Mekelle</option>
+                      <option class="to" value="Adama">Adama</option>
+                      <option class="to" value="Hawassa">Hawassa</option>
+                      <option class="to" value="Bahir Dar">Bahir Dar</option>
+                      <option class="to" value="Gonder">Gonder</option>
+                      <option class="to" value="Dessie">Dessie</option>
+                      <option class="to" value="JImma">Jimma</option>
+                      <option class="to" value="Jijiga">Jijiga</option>
+                      <option class="to" value="Shashamane">Shashamane</option>
+                      <option class="to" value="Bishoftu">Bishoftu</option>
+                      <option class="to" value="Sodo">Sodo</option>
+                      <option class="to" value="Arba Minch">Arba Minch</option>
+                      <option class="to" value="Hosaena">Hosaena</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div>
+                <div class="col-md-12 col-centered">
+                  <label><span class="searchLabel">Date&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><input id="datepicker" type="date"></label>
+                  <div id="searchBtn" class="btn  btn-success">Search for Trains</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Available Trains -->
+          <div id="availableTrains" class="col-md-12">
+            <table class="table table-bordered m-4">
+              <thead>
+                <tr>
+                  <th scope="col">Train No</th>
+                  <th scope="col">Train Name</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">No. of Seats</th>
+                  <th scope="col">Cost per Seat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row" class="trainNumber" value="1234">12345</td>
+                  <td class="trainName" value="Sheger Train">Sheger Train </td>
+                  <td class="trainTime" value="6:00 AM">6:00 AM</td>
+                  <td>
+                    <select type="number" class="noOfSeats m-0">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </td>
+                  <td value="600" class="costPerSeat">600</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="trainNumber" value="4321">54321</td>
+                  <td class="trainName" value="Anbessa Train"> Anbessa Train </td>
+                  <td class="trainTime" value="10:00 AM">10:00 AM</td>
+                  <td>
+                    <select type="number" class="noOfSeats m-0">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </td>
+                  <td class="costPerSeat" value="500">500</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="trainNumber" value="2134">21345</td>
+                  <td class="trainName" value="Selam Train"> Selam Train </td>
+                  <td class="trainTime" value="10:00 AM">2:00 PM</td>
+                  <td>
+                    <select type="number" class="noOfSeats m-0">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </td>
+                  <td class="costPerSeat" value="800">800</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="trainNumber" value="3412">34512</td>
+                  <td class="trainName" value="Zemen Train"> Zemen Train </td>
+                  <td class="trainTime" value="10:00 AM">6:00 PM</td>
+                  <td>
+                    <select type="number" class="noOfSeats m-0">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                    </select>
+                  </td>
+                  <td class="costPerSeat" value="1000">1000</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan='100%' scope="row">
+                    <span class="text-center btn btn-primary bookTrain">Book Now</span>
+                    <p class="text-center mt-1">Total price: <span class="totalPrice"></span></p>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>    
+          </div>
+          <!-- Select your CLass -->
+          <div id="selectClass" class="col-md-12 mt-5">
+            <div class="card mb-4 mt-5">
+              <div>
+                <h2 class="text-center">Select Your Class&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
+                <div id="trainClass" class="m-4">
+                  <label class="economy mb-4"><input type="radio" name="toggle"><span value="0">Economy</span></label>
+                  <label class="business"><input type="radio" name="toggle"><span value="200">Business&nbsp</span></label><p class="classCost">+ 200 Birr per Seat</p>
+                  <label class="luxury"><input type="radio" name="toggle"><span value="500">Luxury&nbsp&nbsp&nbsp&nbsp</span></label><p class="classCost">+ 500 Birr per Seat </p>
+                </div>
+                <div>
+                  <div class="col-xs-5 mb-2">
+                    <span class="btn btn-success bookClass classBtn">BOOK NOW</span>
+                  </div>
+                  <div class="col-xs-5">
+                    <span class="btn btn-danger cancelBook classBtn">CANCEL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Your Ticket -->
+          <div id="yourTicket" class="col-md-6 col-centered">
+            <div class="mb-4" id="ticket">                
+              <div class="row">
+                <div class="col-xs-6 ticketDate"></div>
+                <div class="col-xs-6 ticketProvider">ETHIOPIAN RAILWAYS</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 ticketTrainNumber trainNumber"></div>
+                <div class="col-xs-6 ticketTrainName trainName"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 ticketFrom">From - <span id="From"></span></div>
+                <div class="col-xs-6 ticketTo">To - <span id="To"></span></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 ticketTime">Time - <span class="trainTime"></span></div>
+                <div class="col-xs-6 ticketPrice">Price - <span class="trainCost"></span><span>&nbspBirr</span></div>
+                <div class="col-xs-4 ticketNoSeats">No. of Seats - <span class="noOfSeats"></span></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 barcode">
+                  <table id="barcodes">
+                    <tr></tr>
+                  </table>
+                  </div>
+                <div class="col-xs-2 ticketClass">Class - <span class="typeOfClass"></span></div>
+              </div>
+            </div>
+            <button class="text-center" onclick="window.print()">Print Your Ticket</button>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <p class="footer text-center">Built by: Kameti Daniel Kumbi</p>
+      <p class="footer text-center">Email: <a href="mailto: Kametidanielk@gmail.com">Kametidanielk@gmail.com</a></p>
+      <p class="footer text-center">
+        <ul class="list-unstyled text-center">Sources and assets used:
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>Bootstrap</li>
+          <li>VS Code</li>
+          <li>W3Schools</li>
+          <li>FreeCodeCamp</li>
+          <li>GitHub</li>
+        </ul>
+      </p>
+
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

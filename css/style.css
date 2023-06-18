@@ -1,0 +1,372 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/train.jpg");
+  background-position: center;
+  height: 150vh;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.card {
+  padding: 2rem;
+  background-color: #b7c0b6;
+}
+
+label {
+  margin: 1rem 1rem;
+  color: rgb(0, 0, 0);
+  align-self: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+  color: rgb(24, 61, 26);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+/********** Header ***********/
+
+h1 {
+  color: #FFF;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  margin-top: 5rem;
+}
+
+/*********** Search For Trains ***********/
+
+#searchForTrains {
+  margin-top: 3rem;
+}
+
+.searchLabel {
+  font-size: 1.05rem;
+}
+
+select {
+  border-color: rgb(93,170, 69);
+  border-radius: 3px;
+  padding: .3rem 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#datepicker {
+  border-color: rgb(93,170, 69);
+  border-radius: 3px;
+  border-width: 1px;
+  padding: .1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#searchBtn {
+  margin-left: 6.5rem;
+  padding: .5rem 1.7rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(51, 81, 100);
+}
+
+/********** Available Trains **********/
+
+.noOfSeats {
+  padding: .05rem .3rem;
+}
+
+table {
+  background-color: #d6cfdb;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bookTrain {
+  background-color: #5a4880;
+}
+
+/********** Select Your Class **********/
+
+#trainClass label {
+  display: block;
+  text-align: center;
+  width: 50vw;
+  margin: 5px;
+  background-color:#EFEFEF;
+  border-radius:4px;
+  border:1px solid #D0D0D0;
+}
+
+#trainClass label span {
+  text-align: center;
+  font-size: 1.75rem;
+  padding: .5rem 0;
+  display:inline-block;
+  width: 100%;
+}
+
+#trainClass label input {
+  position: absolute;
+  opacity: 0;
+}
+
+#trainClass label:hover {
+  background-color: #c5c5c5;
+}
+
+#trainClass input:checked + span {
+  background-color:#565f5f;
+  color:#ffffff;
+}
+
+#trainClass .economy {
+  background-color:#94bbc2;
+  color:#000000;
+}
+
+#trainClass .business {
+  background-color:#998fa1;
+  color:#000000;
+}
+
+#trainClass .luxury {
+  background-color:#beb66a;
+  color:#000000;
+}
+
+.classCost {
+  background-color: #b7c0b6;
+  margin-top: 0;
+  font-size: 1.075rem;
+  padding-left: .75rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.classBtn {
+  margin-left: 6.5rem;
+  padding: .5rem 1.7rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(69, 99, 72);
+}
+
+.selected {
+  background-color: rgba(90, 86, 104, 0.89);
+  color: #FFF;
+}
+
+/********** Ticket ***********/
+
+#yourTicket {
+  margin: auto;
+  margin-top: 5rem;
+}
+
+#ticket{
+  width:450px;
+  height:250px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  background: rgb(240, 240, 240);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ticketDate{
+  text-align:left;
+  left:10px;
+  font-size:15px;
+  padding: 10px 5px 0px 25px;
+}
+
+.ticketProvider {
+  padding: 10px 2px 0px 180px;
+  text-align:right;
+  right:10px;
+  font-size:15px;
+}
+
+.ticketTrainNumber {
+  font-size:60px;
+  padding: 10px 5px 10px 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.ticketTrainName{
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 30px 2px 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ticketFrom {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 0px 20px 10px 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ticketTo {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 0px 2px 8px 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ticketTime {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 0px 5px 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ticketPrice {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 0px 2px 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ticketNoSeats {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 0px 2px 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#barcodes {
+  width: 80%;
+  font-size: 22px;
+  padding: 0;
+  margin: 6px 16px 6px 16px;
+}
+
+td {
+  width: 4px;
+  height: 30px;
+}
+
+.ticketClass {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 7px 2px 0px 10px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/************* Footer **************/
+
+.footer, a {
+  color: #97c2c9;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+  margin-top: 1rem;
+  color: #fafafa;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+  margin-top: 5vh;
+}
+
+/**** Media queries for responsiveness ****/ 
+
+@media (max-width: 420px) {
+  #searchBtn {
+    margin-left: 1rem;
+    padding: .5rem 1.7rem;
+  }
+
+  .classBtn {
+    margin-left: 2rem;
+    padding: .5rem 1.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .classCost {
+    padding-left: 15%;
+  }
+}
+
+@media (min-width: 650px) {
+  .classCost {
+    padding-left: 32%;
+  }
+}
+
+@media (min-width: 768px) {
+  #trainClass label {
+    width: 35vw;
+    margin-left: 17vw;
+  }
+
+  .classBtn {
+    margin-left: 12rem;
+    padding: .5rem 1.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+}
+
+@media (min-width: 850px) {
+  .classCost {
+    padding-left: 38%;
+  }
+}
+
+@media (min-width: 992px) {
+  label {
+    margin-left: 7rem;
+  }
+
+  #trainClass label {
+    width: 25vw;
+    margin-left: 25vw;
+  }
+
+  .classBtn {
+    margin-left: 23rem;
+    padding: .5rem 1.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+}
+
+@media (min-width: 1150px) {
+  .classCost {
+    padding-left: 41%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #trainClass label {
+    width: 350px;
+    margin-left: 20vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  #trainClass label {
+    width: 350px;
+    margin-left: 20vw;
+  }
+}
+
+@media (min-width: 1850px) {
+  #trainClass label {
+    width: 350px;
+    margin-left: 12.5vw;
+  }
+}
+
+
+
+
+
