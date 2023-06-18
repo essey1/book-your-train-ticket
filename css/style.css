@@ -257,27 +257,6 @@ button {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/************* Footer **************/
-
-.footer, a {
-  color: #97c2c9;
-  margin-bottom: 0;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-ul {
-  margin-top: 1rem;
-  color: #fafafa;
-  margin-bottom: 0;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-footer {
-  margin-top: 5vh;
-}
-
 /**** Media queries for responsiveness ****/ 
 
 @media (max-width: 420px) {
