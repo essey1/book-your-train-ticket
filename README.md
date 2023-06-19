@@ -1,4 +1,4 @@
-### A train ticket booking web application
+## A train ticket booking web application
 
 This is a one page web application that receives data from the user about booking a train and returns a ticket consisting of all the data entered by the user.
 
