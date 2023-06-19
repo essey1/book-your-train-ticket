@@ -22,5 +22,5 @@ And this is how I was able to make this Software application work.
 
 You can check out the code on the GitHub repository for more detailed information.
 
-Link to the Web application: https://username.github.io/book-your-train-ticket
+Link to the Web application: https://essey1.github.io/book-your-train-ticket
 
