@@ -3,6 +3,7 @@
 }
 
 body {
+  background-color: #212861;
   background-image: url("../img/train.jpg");
   background-position: center;
   height: 150vh;
