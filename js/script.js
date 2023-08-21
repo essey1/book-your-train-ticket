@@ -1,14 +1,26 @@
 // All the functionalities of this app will be executed once it finishes loading
 document.addEventListener("DOMContentLoaded", function() {
 
-  // When the site loads display only the searchForTrains section
+  // When the site loads, it display only the searchForTrains section
   document.querySelector("#availableTrains").style.display = "none";
   document.querySelector("#selectClass").style.display = "none";
   document.querySelector("#yourTicket").style.display = "none";
 
+  // Makes sure that the user has selected a future date
+  function validateDate() {
+    var selectedDate = document.getElementById("datepicker").value;
+    var currentDate = new Date().toISOString().split("T")[0];
+  
+    if (selectedDate < currentDate) {
+      alert("Please select a future date.");
+      return false;
+    }
+  }
 
   // Displays the availableTrains section
-  document.getElementById("searchBtn").addEventListener("click", () => {
+  searchBtn = document.getElementById("searchBtn");
+  searchBtn.addEventListener("click", () => {
+    validateDate();
 
     from = document.querySelector(".from").value;
     to = document.querySelector(".to").value;
