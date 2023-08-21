@@ -6,22 +6,16 @@ document.addEventListener("DOMContentLoaded", function() {
   document.querySelector("#selectClass").style.display = "none";
   document.querySelector("#yourTicket").style.display = "none";
 
-  // Makes sure that the user has selected a future date
-  function validateDate() {
-    var selectedDate = document.getElementById("datepicker").value;
-    var currentDate = new Date().toISOString().split("T")[0];
-  
-    if (selectedDate < currentDate) {
-      alert("Please select a future date.");
-      return false;
-    }
-  }
+  // Makes it so that the user can only select a future date
+  let currentDate = new Date();
+  let minDate = new Date().toISOString().split("T")[0];
+
+  let datepicker = document.getElementById("datepicker");
+  datepicker.min = minDate;
 
   // Displays the availableTrains section
   searchBtn = document.getElementById("searchBtn");
   searchBtn.addEventListener("click", () => {
-    validateDate();
-
     from = document.querySelector(".from").value;
     to = document.querySelector(".to").value;
     date = document.querySelector("#datepicker").value;
@@ -29,12 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Makes sure the user have entered all the data
     if (!(from && to && date)) {
           alert("Please Select All Fields!");
-          return False;
+          return false;
         }
         else if(from == to)
           {
             alert("From and To can't be the same");
-            return False;
+            return false;
           }
 
     document.querySelector("#searchForTrains").style.display = "none";
